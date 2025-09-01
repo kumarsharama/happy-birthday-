@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday 🎉</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+<body>
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- Hero -->
+  <section class="hero section scroll-fade">
+    <div class="text-overlay">
+      <h1 id="typed"></h1>
+      <p>Wishing you the happiest birthday ever! 🎂🎉</p>
+    </div>
+  </section>
+
+  <!-- Surprise -->
+  <section class="section scroll-fade">
+    <h2>Open Your Surprise 🎁</h2>
+    <button id="openSurprise" class="glow-btn">Open</button>
+    <div class="cake-container">
+      <img src="images/cake.png" class="cake" alt="Birthday Cake">
+      <div class="candle-flame"></div>
+    </div>
+  </section>
+
+  <!-- Memories -->
+  <section class="section scroll-fade">
+    <h2>Our Memories ❤️</h2>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/photo1.png" alt="photo1"></div>
+        <div class="swiper-slide"><img src="images/photo2.jpg" alt="photo2"></div>
+        <div class="swiper-slide"><img src="images/photo3.jpg" alt="photo3"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+
+  <!-- Countdown -->
+  <section class="section scroll-fade countdown-section">
+    <h2>⏳ Time Left Until Birthday Ends 🎂</h2>
+    <div id="countdown" class="countdown-box"></div>
+  </section>
+
+  <!-- Music -->
+  <audio id="bgMusic" src="assets/music/birthday.mp3" loop></audio>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
